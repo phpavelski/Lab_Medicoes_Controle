@@ -19,6 +19,7 @@ U = fft(u)
 clf()
 scf(0)
 plot(t,abs(U))
+
 // código abaixo veio da documentacao da funcao fft()
 // u is real so the fft response is conjugate symmetric and we retain only the first N/2 points
 N = size(t,'*')
