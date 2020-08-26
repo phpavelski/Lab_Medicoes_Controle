@@ -16,3 +16,15 @@ end
 // 3. Aplicar a transformada rápida de Fourier ao sinal gerado em (2);
 
 U = fft(u)
+
+// 4. Exibir gráficos contendo o sinal gerado em (2) e seu espectro de potência
+clf()
+scf(0)
+plot(t,abs(U))
+// código abaixo veio da documentacao da funcao fft()
+// u is real so the fft response is conjugate symmetric and we retain only the first N/2 points
+N=size(t,'*')
+f=20*(0:(N/2))/N; //associated frequency vector
+n=size(f,'*')
+scf(1)
+plot(f,abs(U(1:n)))
