@@ -34,16 +34,15 @@ legend(['y1';'y2'])
 
 // 5. Interpretar o gráfico e explicar o resultado.
 
-// No gráfico, vê-se que ambos os sinais sobrepõem-se perfeitamente. Isso ocorre
-// justamente porque o que se adiciona no segundo sinal tem frequência 
+// No gráfico, vê-se que ambos os sinais sobrepõem-se perfeitamente.
+// Isso ocorre justamente porque o sinal adicionado tem frequência 
 // proporcional à de amostragem, ou seja, em todos os pontos em que o programa
 // calcula seu valor, a parcela corresponde a zero.
 //
-// De maneira mais algébrica, podemos comprovar esse fato, chamando, por simplicidade,
-// w1 = 2*pi*f e w2 = 2*pi*P*fa, tendo:
+// De maneira mais algébrica, podemos comprovar esse fato, chamando,
+// por simplicidade, w1 = 2*pi*f e w2 = 2*pi*P*fa, tendo:
 // cos(w1*t + phi + w2*t) = cos(w1*t + phi)*cos(w2*t) - sin(w1*t + phi)*sin(w2*t)
-// Como não há atraso nos sinais referentes à w2 e a sua frequência é,
-// conforme mencionado, proporcional à de amostragem, todos os resultados amostrados
-// para cos(w2*t) são iguais a 1 e, analogamente, todos os resultados amostrados
-// para sin(w2*t) são iguais a 0, dessa forma, temos que, de fato, 
-// cos(w1*t + phi + w2*t) = cos(w1*t + phi)
+// Como não há atraso nos sinais referentes à w2 e P*fa*t será sempre um número 
+// inteiro, todos os resultados amostrados para cos(w2*t) são iguais a 1 e,
+// analogamente, todos os resultados amostrados para sin(w2*t) são iguais a 0,
+// dessa forma, temos que, de fato, cos(w1*t + phi + w2*t) = cos(w1*t + phi).
