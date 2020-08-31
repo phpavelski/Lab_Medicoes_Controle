@@ -2,7 +2,7 @@ clc
 clear
 
 pi = %pi
-
+// oi
 // Parte 1
 // 1. Gerar um vetor de tempos com passo dt=1/fa, fa=100Hz (frequência de amostragem), de duração 4 segundos;
 fa = 100 //Hz
