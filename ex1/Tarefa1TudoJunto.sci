@@ -93,6 +93,7 @@ xlabel('Frequência (Hz)')
 ylabel('Amplitude')
 title(['Espectro de potência do sinal gerado'])
 
+
 // 5. Utilizando o mesmo vetor de tempos, gerar uma função periódica (seno ou cosseno) de frequência 4 Hz
 
 seno = sin(8*pi*t)
@@ -272,7 +273,7 @@ t4 = 0:0.01:10
 u4 = cat(2,zeros(1,100),ones(1,200),zeros(1,701));
 U4 = fft(u4)
 N4 = size(t4,'*')
-frequency_vector4 =20*(0:(N4/2))/N4; //associated frequency vector
+frequency_vector4 =100*(0:(N4/2))/N4; //associated frequency vector
 n4 = size(frequency_vector4,'*')
 
 //ATENÇÃO: As demais etapas seguirão novamente as numerações da Parte 2, para mais fácil compreensão.
