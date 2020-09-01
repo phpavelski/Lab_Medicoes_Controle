@@ -298,6 +298,8 @@ subplot(222)
 plot2d(frequency_vector4,abs(U_seno1pt4(1:n4)),5)
 xlabel('Frequência (Hz)')
 ylabel('Amplitude')
+a = gca()
+a.data_bounds=[0,0;10,500]
 title(['Espectro de potência do sinal gerado no item (5) / Parte 4 (4,01 Hz)'])
 
 // 8. Efetuar a multiplicação dos sinais gerados em (2) e em (5)
@@ -317,6 +319,8 @@ subplot(224)
 plot2d(frequency_vector4,abs(U_mult1pt4(1:n4)),5)
 xlabel('Frequência (Hz)')
 ylabel('Amplitude')
+a = gca()
+a.data_bounds=[0,0;10,100]
 title(['Espectro de potência do sinal gerado no item (8) / Parte 4 (4,01 Hz)'])
 
 //Para frequêcia de 4,16 Hz:
@@ -340,6 +344,8 @@ subplot(222)
 plot2d(frequency_vector4,abs(U_seno2pt4(1:n4)),3)
 xlabel('Frequência (Hz)')
 ylabel('Amplitude')
+a = gca()
+a.data_bounds=[0,0;10,500]
 title(['Espectro de potência do sinal gerado no item (5) / Parte 4 (4,16 Hz)'])
 
 // 8. Efetuar a multiplicação dos sinais gerados em (2) e em (5)
@@ -359,6 +365,8 @@ subplot(224)
 plot2d(frequency_vector4,abs(U_mult2pt4(1:n4)),3)
 xlabel('Frequência (Hz)')
 ylabel('Amplitude')
+a = gca()
+a.data_bounds=[0,0;10,100]
 title(['Espectro de potência do sinal gerado no item (8) / Parte 4 (4,16 Hz)'])
 
 // Comparação com Parte 3 e explicação do comportamento dos espectros:
@@ -389,6 +397,8 @@ plot2d(frequency_vector4,abs(U_seno1pt4(1:n4)),3)
 plot2d(frequency_vector4,abs(U_seno2pt4(1:n4)),4)
 xlabel('Frequência (Hz)')
 ylabel('Amplitude')
+a = gca()
+a.data_bounds=[0,0;10,500]
 legend(['4,01Hz - Parte 3';'4,16Hz - Parte 3';'4,01Hz - Parte 4';'4,16Hz - Parte 4'])
 title(['Espectro de potência do sinal gerado no item (5) / Parte 3 e 4'])
 
@@ -399,6 +409,8 @@ plot2d(frequency_vector4,abs(U_mult1pt4(1:n4)),3)
 plot2d(frequency_vector4,abs(U_mult2pt4(1:n4)),4)
 xlabel('Frequência (Hz)')
 ylabel('Amplitude')
+a = gca()
+a.data_bounds=[0,0;10,100]
 legend(['4,01Hz - Parte 3';'4,16Hz - Parte 3';'4,01Hz - Parte 4';'4,16Hz - Parte 4'])
 title(['Espectro de potência do sinal gerado no item (8) / Parte 3 e 4'])
 
