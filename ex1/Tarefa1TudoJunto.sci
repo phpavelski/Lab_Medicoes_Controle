@@ -261,7 +261,21 @@ xlabel('Frequência (Hz)')
 ylabel('Amplitude')
 title(['Espectro de potência do sinal gerado no item (8) / Parte 3'])
 
-//
+// Podemos observar que o primeiro gráfico gerado, a partir do sinal periódico (seno), apresenta
+// o comportamento oscilatório esperado, com frequência desejada. Entretando, para ambos os casos,
+// ocorre uma pequena variação entre as amplitudes das oscilações, o que reflete um valor
+// de intervalo de tempo muito grande para a frequência em questão (essa análise será
+// melhor tratada na Parte 4).
+// Nos gráficos de composição do sinal periódico com o sinal unitário, percebemos,
+// como esperado, que o sinal apresenta o comportamento periódico (idêntico ao original)
+// somente no intervalo de tempo em que o sinal u tem valor unitário. Para os demais valores,
+// o sinal composto é nulo.
+// No domínio das frequências, podemos observar que o espectro de potências indica com clareza o
+// valor do sinal periódico no caso em que não há composição (para ambas as frequências). Já
+// para o sinal composto, ocorre a presença de ruídos, que dificultam um pouco mais a leitura.
+// Comparando os gráficos entre as duas frequências, percebemos que ocorre, como esperado,
+// um pequeno avanço nos gráficos de espectros de potência, indicando um aumento da frequência.
+
 //---------------------------------FIM PARTE 3----------------------------------
 
 //-------------------------------COMEÇO PARTE 4---------------------------------
@@ -414,4 +428,17 @@ a.data_bounds=[0,0;10,100]
 legend(['4,01Hz - Parte 3';'4,16Hz - Parte 3';'4,01Hz - Parte 4';'4,16Hz - Parte 4'])
 title(['Espectro de potência do sinal gerado no item (8) / Parte 3 e 4'])
 
+// A partir das figuras exibidas para o novo valor de passo, observa-se explicitamente
+// a diferença já de início com o sinal senoidal "puro", que nas figuras anteriores,
+// principalmente para o caso da maior frequência analisada (4,16 Hz) exibiu uma
+// forma "ondulada" e não homogênea como esperado. A partir disso, infere-se a
+// importância da consideração da taxa de amostragem do sinal, nesse caso simbolizada
+// pelo passo, para a sua interpretação de fato, já que, em contrapartida ao valor anterior, o atual
+// é muito mais adequado e representa de maneira mais fiel o sinal que se pretende transmitir.
+//
+// Isso também fica óbvio ao analisar-se os espectros de potência, que agora estão
+// "centrados" na frequência desejada de maneira mais precisa, isto é, a amplitude
+// do pico é muito maior. Dessa forma, temos que valores de passo grandes são
+// inadequados para a efetiva averiguação e análise de um sinal de frequências grandes,
+// comprometendo a sua qualidade e a sua precisão.
 //---------------------------------FIM PARTE 4----------------------------------
