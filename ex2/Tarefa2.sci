@@ -14,16 +14,7 @@ xdel( winsid() )
 
 pi = %pi
 
-M = csvRead('C:\Users\Usuario\Documents\GitHub\Lab_Medicoes_2\ex2\Raw Data 2.csv')
-[linha, coluna] = size(M)
+M = csvRead('C:\Users\Usuario\Documents\GitHub\Lab_Medicoes_2\ex2\Sons\Caique_o_fechado.wav')
 
 scf(0)
-subplot(221)
-plot(M(2:linha,1),M(2:linha,2))
-subplot(222)
-plot(M(2:linha,1),M(2:linha,3))
-subplot(223)
-plot(M(2:linha,1),M(2:linha,4))
-subplot(224)
-plot(M(2:linha,1),M(2:linha,5))
-
+disp(M)
