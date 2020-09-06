@@ -14,7 +14,7 @@ xdel( winsid() )
 
 pi = %pi
 
-M = csvRead('C:\Users\Usuario\Documents\GitHub\Lab_Medicoes_2\ex2\Raw Data 1.csv')
+M = csvRead('C:\Users\Usuario\Documents\GitHub\Lab_Medicoes_2\ex2\Raw Data 2.csv')
 [linha, coluna] = size(M)
 
 scf(0)
@@ -26,3 +26,4 @@ subplot(223)
 plot(M(2:linha,1),M(2:linha,4))
 subplot(224)
 plot(M(2:linha,1),M(2:linha,5))
+
