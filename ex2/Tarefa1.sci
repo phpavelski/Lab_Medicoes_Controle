@@ -14,7 +14,7 @@ xdel( winsid() )
 
 pi = %pi
 
-M = csvRead('C:\Users\Usuario\Documents\GitHub\Lab_Medicoes_2\ex2\Raw Data 2.csv')
+M = csvRead('C:\Users\pedro\Documents\GitHub\Lab_Medicoes_Controle\ex2\Raw Data 3.csv')
 [linha, coluna] = size(M)
 
 scf(0)
